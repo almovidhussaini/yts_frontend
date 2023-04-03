@@ -1,0 +1,130 @@
+.nav-bar {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  top: 0;
+  position: sticky;
+  z-index: 8;
+  background: #1d1d1d;
+  overflow: hidden;
+  color: #919191;
+  border-bottom: 1px solid #2f2f2f;
+  backface-visibility: hidden;
+  display: block;
+}
+.pull-left {
+  float: left !important;
+}
+#quick-search {
+    float: left;
+    margin-top: 5px;
+}
+.nav-logo {
+}
+.header-slogan {
+    font-size: 1.2em;
+    margin-left: 2%;
+    margin-top: 7px;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.main-nav-links {
+    float: right;
+    margin-right: 5%;
+}
+.nav-links {
+    padding-top: 15px;
+    display: inline-block;
+}
+.nav-links>li{
+
+    display: inline;
+    margin-right: 20px;
+    list-style: none;
+
+}
+.nav-links>li>a{
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: bold;
+    color: #919191;
+    transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    -webkit-transition: color .25s ease-in-out;
+
+}
+
+
+
+.nav-mobile-buttons {
+    float: right;
+}
+.nav-mobile-buttons>a{
+    margin-left: 7px;
+    font-size: 23px;
+    color: #e3e3e3;
+}
+
+#quick-search-input{
+    width: 250px;
+    height: 35px;
+    font-size: .85em;
+    font-weight: bold;
+    color: #919191;
+    border: 2px solid #333;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    padding: 4px 30px;
+    /* background: #1d1d1d url("../images/website/icon-search.svg") no-repeat 9px 8px; */
+}
+#quick-search-container{
+    position: relative;
+    margin-right: 10px;
+}
+
+
+
+@media (min-width: 768px) {
+  .nav-bar {
+    height: 60px;
+    padding-top: 8px;
+  }
+  .nav-logo {
+    margin-left: 5%;
+  }
+  .nav-logo img {
+    height: 40px;
+    margin-left: 5%;
+  }
+  .nav-mobile-buttons{
+    margin-right: 10px;
+    padding-top: 1px;
+  }
+  .nav-mobile-buttons>a {
+    margin-left: 7px;
+    font-size: 23px;
+  }
+ 
+}
+
+@media (min-width: 992px) and (max-width: 1450px)
+{ 
+         .header-slogan{
+            display: none;
+      } 
+}
+
+@media (min-width: 1200px)
+{ 
+    .hidden-lg {
+       display: none !important;
+    }
+}
+
+

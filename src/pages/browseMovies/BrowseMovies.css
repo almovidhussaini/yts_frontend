@@ -1,0 +1,130 @@
+.tsc_pagination {
+    margin: 25px 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    list-style-type: none;
+    display: flex;
+    column-gap: 1rem;
+    width: 100%;
+
+}
+.tsc_pagination>li>a {
+    text-decoration: none;
+    border:2px solid;
+    border-color: black;
+    padding:5px 12px;
+    display:inline-block;
+    border-radius: 8%;
+    color:white;
+    font-size:1.1em
+}
+.unavailable{
+    text-decoration: none;
+    border:2px solid;
+    border-color: black;
+    padding:3px 12px 8px 12px;
+    display:inline-block;
+    border-radius: 8%;
+    color:white;
+    font-size:1.1em
+}
+.active{
+    background-color:green;
+
+    border-color: white;
+
+    color: white;
+}
+
+
+#YIFY_MOVIES{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.showSingleMovie{
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+justify-content:center;
+align-items:center;
+margin: 2rem 6rem 0  6rem;
+}
+
+.singleMovie>p{
+    margin-top: -0.4rem;
+    color:white
+
+}
+.singleMovie>h5{
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:white
+}
+.mainBody{
+    background-color: #1d1d1d;
+    padding: 0;
+    margin: 0;
+}
+.form_control>select{
+ background-color: #282828;
+ border-color: #282828;
+    color:#a2a2a2;
+    margin: 0;
+}
+.form_control>select>option{
+    color:#a2a2a2;
+}
+.imageHoverMaterial {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 1.4rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    align-items: center;
+    z-index: 2;
+    font-family: 'Quicksand',sans-serif;
+    background-color: #282828;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.imageHoverMaterial>p{
+    line-height: 2%;
+    margin-top:1rem;
+    font-size: 1.6rem;
+
+}
+.imageHoverMaterial>Button{
+    background: #6ac045;
+    display: block;
+    color: #fff;
+    padding:7px 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+
+}
+.ImageFullBody{
+    position: relative;
+}
+.imageHoverMaterial>p{
+    color: white;
+}
+.imageHoverMaterial:hover{
+    opacity: 0.9;
+}
+
+#movie-info span.icon-star {
+    color: #6ac045;
+    margin-left: 10px;
+    font-size: 1.1em;
+}

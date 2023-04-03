@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/common/navbar/Navbar.js';
+import Footer from './components/common/footer/Footer.js';
+import Home from './pages/home/Home.js';
+import ViewDetails from './pages/details/ViewDetails';
+import BrowseMovies from './pages/browseMovies/BrowseMovies.js';
+import Trending from './pages/trending/Trending.js';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Navbar/>
+    <Routes>
+       <Route index element ={ <Home /> } />
+          <Route path="/viewdetails" element={<ViewDetails/>} />
+          
+          <Route path = "/trending" element = { <Trending/>  } />
+          <Route path = "/browse-movies" element = { <BrowseMovies/>  } />
+       </Routes>
+    <Footer/>
+  </BrowserRouter>
   );
 }
 
